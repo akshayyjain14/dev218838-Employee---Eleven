@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application">
+    <sys_app_application action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category display_value="">Custom Applications</category>
+        <description>Employee Requirements for 11-11</description>
+        <device_type>browser</device_type>
+        <hint>Employee Requirements for 11-11</hint>
+        <name/>
+        <order/>
+        <roles>admin</roles>
+        <sys_class_name>sys_app_application</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-01 19:33:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>37ddd2b0c3d1a610528d304d05013112</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Employee Eleven_Eleven</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Employee Eleven_Eleven" source="x_857431_employee">21ad56bcc391a610528d304d050131ad</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Eleven_Eleven">21ad56bcc391a610528d304d050131ad</sys_scope>
+        <sys_update_name>sys_app_application_37ddd2b0c3d1a610528d304d05013112</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-01 19:33:40</sys_updated_on>
+        <title>Employee Eleven_Eleven</title>
+        <view_name/>
+    </sys_app_application>
+</record_update>

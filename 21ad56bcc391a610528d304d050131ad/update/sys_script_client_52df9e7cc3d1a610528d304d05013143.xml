@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>user</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Populate User Info</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+
+   var ga = new GlideAjax('x_857431_employee.userInfoUtil');
+   ga.addParam('sysparm_name', 'getUserDetails');
+   ga.addParam('sysparm_id', g_form.getValue('user'));
+   ga.getXMLAnswer(getResponse);
+	function getResponse(answer){
+		answer = JSON.parse(answer);
+		g_form.setValue('manager', answer.manager);
+		g_form.setValue('email', answer.email);
+		g_form.setValue('phone', answer.phone);
+	}
+   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-01 19:42:56</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>52df9e7cc3d1a610528d304d05013143</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Populate User Info</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Employee Eleven_Eleven" source="x_857431_employee">21ad56bcc391a610528d304d050131ad</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Eleven_Eleven">21ad56bcc391a610528d304d050131ad</sys_scope>
+        <sys_update_name>sys_script_client_52df9e7cc3d1a610528d304d05013143</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-01 20:02:19</sys_updated_on>
+        <table>x_857431_employee_employees</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

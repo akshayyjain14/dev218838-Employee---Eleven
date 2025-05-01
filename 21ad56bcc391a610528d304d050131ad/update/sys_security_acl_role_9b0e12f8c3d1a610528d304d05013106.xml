@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-01 19:34:27</sys_created_on>
+        <sys_id>9b0e12f8c3d1a610528d304d05013106</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_857431_employee_employees.x_857431_employee.employees_user</sys_name>
+        <sys_package display_value="Employee Eleven_Eleven" source="x_857431_employee">21ad56bcc391a610528d304d050131ad</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Eleven_Eleven">21ad56bcc391a610528d304d050131ad</sys_scope>
+        <sys_security_acl display_value="x_857431_employee_employees">970e12f8c3d1a610528d304d05013101</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_9b0e12f8c3d1a610528d304d05013106</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-01 19:34:27</sys_updated_on>
+        <sys_user_role display_value="x_857431_employee.employees_user" name="x_857431_employee.employees_user">830ed2b8c3d1a610528d304d05013186</sys_user_role>
+    </sys_security_acl_role>
+</record_update>
