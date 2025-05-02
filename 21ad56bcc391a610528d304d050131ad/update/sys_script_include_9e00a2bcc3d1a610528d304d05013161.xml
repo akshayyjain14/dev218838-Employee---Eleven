@@ -5,7 +5,13 @@
         <api_name>x_857431_employee.userInfoUtil</api_name>
         <caller_access/>
         <client_callable>true</client_callable>
-        <description/>
+        <description>Create a custom table "Employees" and add the fields mentioned below:&#13;
+A. Emp ID: Automatically generated with prefix EMP&#13;
+B. User: Reference field to user table&#13;
+C. Email: String [Automatically populate from User Record]&#13;
+D. Phone: String [Automatically populate from User Record]&#13;
+E. Manager: Reference to User table [Automatically populate from User Record]&#13;
+F. Joining Date: Date type, [Enforce future dates only, no past dates / no todays date]</description>
         <mobile_callable>false</mobile_callable>
         <name>userInfoUtil</name>
         <sandbox_callable>false</sandbox_callable>
@@ -31,13 +37,13 @@ userInfoUtil.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-05-01 19:43:49</sys_created_on>
         <sys_id>9e00a2bcc3d1a610528d304d05013161</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>userInfoUtil</sys_name>
         <sys_package display_value="Employee Eleven_Eleven" source="x_857431_employee">21ad56bcc391a610528d304d050131ad</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Employee Eleven_Eleven">21ad56bcc391a610528d304d050131ad</sys_scope>
         <sys_update_name>sys_script_include_9e00a2bcc3d1a610528d304d05013161</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-05-01 20:04:40</sys_updated_on>
+        <sys_updated_on>2025-05-02 05:40:09</sys_updated_on>
     </sys_script_include>
 </record_update>
