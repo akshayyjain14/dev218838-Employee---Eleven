@@ -2,10 +2,10 @@
     <element db_object_id="c9fd5eb8c3d1a610528d304d050131a5" label="Employees" max_length="40" name="x_857431_employee_employees" type="collection">
         <element label="User" max_length="32" name="user" reference="sys_user" type="reference"/>
         <element label="Joining Date" max_length="40" name="joining_date" type="glide_date"/>
-        <element label="Phone" max_length="100" name="phone" type="string"/>
-        <element label="Manager" max_length="32" name="manager" reference="sys_user" type="reference"/>
+        <element label="Phone" max_length="100" name="phone" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Manager" max_length="32" name="manager" read_only="true" reference="sys_user" type="reference"/>
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Emp ID" max_length="40" name="number" read_only="true" type="string"/>
-        <element label="Email" max_length="100" name="email" type="string"/>
+        <element label="Email" max_length="100" name="email" read_only="true" type="string"/>
         <index name="index">
             <element name="manager"/>
         </index>

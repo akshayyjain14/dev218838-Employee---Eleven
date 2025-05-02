@@ -24,10 +24,10 @@ userInfoUtil.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         var grUser = new GlideRecord('sys_user');
         if (grUser.get(userID)) {
             result.phone = grUser.getValue('phone');
-            result.manager = grUser.getDisplayValue('manager');
+            result.manager = grUser.getValue('manager');
             result.email = grUser.getValue('email');
         }
-	gs.info('Alert result manager: '+ JSON.stringify(result));
+		//gs.info('Alert Employee Data: '+ JSON.stringify(result));
 		return JSON.stringify(result);
 
     },
@@ -37,13 +37,13 @@ userInfoUtil.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-05-01 19:43:49</sys_created_on>
         <sys_id>9e00a2bcc3d1a610528d304d05013161</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name>userInfoUtil</sys_name>
         <sys_package display_value="Employee Eleven_Eleven" source="x_857431_employee">21ad56bcc391a610528d304d050131ad</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Employee Eleven_Eleven">21ad56bcc391a610528d304d050131ad</sys_scope>
         <sys_update_name>sys_script_include_9e00a2bcc3d1a610528d304d05013161</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-05-02 05:40:09</sys_updated_on>
+        <sys_updated_on>2025-05-02 06:49:00</sys_updated_on>
     </sys_script_include>
 </record_update>
